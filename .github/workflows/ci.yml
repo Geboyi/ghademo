@@ -31,6 +31,7 @@ jobs:
       run: |
         echo `pwd`
         echo "Hello Geboyi"
+        cd terraform/phase1
         terraform init
         terraform plan
         terraform apply --auto-approve
