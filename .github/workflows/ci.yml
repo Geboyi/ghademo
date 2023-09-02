@@ -38,6 +38,6 @@ jobs:
       working-directory: ${{ github.event.inputs.tfpath }}
     - name: Terraform Destroy
       run: |
-        echo "Bye Bye Gerald"
+        echo "Bye Gerald"
         # terraform plan -destroy
       working-directory: ${{ github.event.inputs.tfpath }}
