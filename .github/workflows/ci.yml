@@ -7,7 +7,7 @@ on:
       tfpath:
         description: 'TF File Path'     
         required: false
-        default: 'terraform/phase1'
+        #default: ' '
   push:
     branches: [ main ]
   pull_request:
@@ -35,9 +35,9 @@ jobs:
         terraform init
         terraform plan
         terraform apply --auto-approve
+        terraform destroy --auto-approve
       working-directory: ${{ github.event.inputs.tfpath }}
-    - name: Terraform Destroy
+    - name: Bye
       run: |
         echo "Bye Gerald"
-        # terraform plan -destroy
       working-directory: ${{ github.event.inputs.tfpath }}
