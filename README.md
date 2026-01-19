@@ -7,6 +7,7 @@ The project showcases how modern DevOps practices can be used to automate infras
 
 This repository is intended as an **industry-focused DevOps portfolio project**, reflecting real-world workflows rather than academic simulations.
 
+**Pipeline Flow:** Code Push/Pull → GitHub Actions → Terraform → AWS S3
 ---
 
 ##  Objectives
@@ -34,9 +35,9 @@ This repository is intended as an **industry-focused DevOps portfolio project**,
 │       └── ci.yml   # GitHub Actions CI/CD workflow
 │
 ├── terraform/
-│   └── phase1/
+│   └── phase1/                  # Infrastructure provisioning (S3)
 │       ├── main.tf              # S3 bucket resource definition
-│       ├── variables.tf         # Input variables
+│       ├── backend.tf           # Terraform backennd configuration
 │       └── provider.tf          # AWS provider configuration
 │
 └── README.md
