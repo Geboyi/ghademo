@@ -27,7 +27,7 @@ This repository is intended as an **industry-focused DevOps portfolio project**,
 
 ---
 
-## 🧩 Repository Structure
+##  Repository Structure
 ```text
 .
 ├── .github/
